@@ -1,0 +1,16 @@
+.marco{
+	border: solid 0.3rem red;
+	color:black;
+	background-color: orange;
+	height: 70px;
+	width: 70px;
+}
+.marco2{
+
+	border: solid 0.3rem red;
+	background-color: orange;
+}
+.centrar{
+	
+	align-content: center;
+}
