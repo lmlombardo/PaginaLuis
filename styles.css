@@ -1,3 +1,10 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .marco{
 	border: solid 0.3rem red;
 	color:black;
@@ -5,12 +12,34 @@
 	height: 70px;
 	width: 70px;
 }
+
 .marco2{
 
 	border: solid 0.3rem red;
 	background-color: orange;
+	margin-top: auto;
 }
-.centrar{
+
+.moveRight{
 	
-	align-content: center;
+	padding-left: 3px;
+}
+
+.moveLeft{
+	
+	padding-right: 10px;
+}
+
+.color1{
+	background-color: yellow;
+}
+
+.color2{
+	background-image: url("images/fondo.jpg");
+	border: solid 0.1rem black;
+	background-repeat: no-repeat;
+}
+
+.titleColor{
+	color: purple;
 }
