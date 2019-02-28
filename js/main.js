@@ -3,30 +3,24 @@ function redirection(url){
   win.focus();
 }
 
-function dameEstrellas(){
-loadJSON('https://api.github.com/repos/luislombardis/luislombardis.github.io',
-         function(data) { console.log(data); },
-         function(xhr) { console.error(xhr); }
-   );
-}
+var imagenes=new Array(
+   	['./images/imagen1.jpeg'],
+    ['./images/imagen2.jpeg'],
+    ['./images/imagen3.jpeg'],
+    ['./images/imagen4.jpeg'],
+    ['./images/imagen5.jpeg'],
+    ['./images/imagen6.jpeg'],
+    ['./images/imagen7.jpeg'],
+    ['./images/foto.jpg']
 
 
-function loadJSON(path, success, error)
+);
+
+function rotarImagenes()
 {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function()
-    {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                if (success)
-                    var myParsed = JSON.parse(xhr.responseText);
-                     document.getElementById("dameEstrellas").innerHTML = "Mis estrellas son "+myParsed.stargazers_count;
-            } else {
-                if (error)
-                    error(xhr);
-            }
-        }
-    };
-    xhr.open("GET", path, true);
-    xhr.send();
-}
+    var index=Math.floor((Math.random()*imagenes.length));
+
+    document.getElementById("imagen").src=imagenes[index];
+    }
+
+

@@ -3,26 +3,30 @@ body{
 	padding: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #3BFFFE;
 }
 
 .marco{
-	border: solid 0.3rem red;
+	border: solid 0.3rem #1E17E8;
 	color:black;
-	background-color: orange;
+	background-color: #C8A4FF;
 	height: 70px;
 	width: 70px;
 }
 
 .marco2{
 
-	border: solid 0.3rem red;
-	background-color: orange;
+	border: solid 0.3rem #1E17E8;
+	background-color: #C8A4FF;
 	margin-top: auto;
 }
 
 .moveRight{
-	
 	padding-left: 3px;
+}
+
+.moveDown{
+	margin: auto;
 }
 
 .moveLeft{
@@ -31,7 +35,7 @@ body{
 }
 
 .color1{
-	background-color: grey;
+	background-color: #17A1E8;
 }
 
 .color2{
@@ -41,5 +45,7 @@ body{
 }
 
 .titleColor{
-	color: purple;
+	color: white;
 }
+
+
