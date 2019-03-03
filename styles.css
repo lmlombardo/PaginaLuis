@@ -6,6 +6,10 @@ body{
 	background-color: #3BFFFE;
 }
 
+.puntero:hover{
+	cursor: pointer;
+}
+
 .marco{
 	border: solid 0.3rem #1E17E8;
 	color:black;
