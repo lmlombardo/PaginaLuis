@@ -12,8 +12,6 @@ var imagenes=new Array(
     ['./images/imagen6.jpeg'],
     ['./images/imagen7.jpeg'],
     ['./images/foto.jpg']
-
-
 );
 
 function rotarImagenes()
@@ -21,6 +19,19 @@ function rotarImagenes()
     var index=Math.floor((Math.random()*imagenes.length));
 
     document.getElementById("imagen").src=imagenes[index];
-    }
+}
 
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction(){
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("boSc").style.display = "block";
+  } else {
+    document.getElementById("boSc").style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
+}

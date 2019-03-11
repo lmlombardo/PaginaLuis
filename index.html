@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./styles.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
     <title>Pagina de Luis</title>
   </head>
   <body>
-    <nav class="navbar color1" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top color1" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
           <div class="marco center column">
@@ -41,12 +41,12 @@
       </div>
     </nav>
 
-    <section class="section">
+    <section class="section moverSeccion">
       <div class="container color2">
         <div class="columns">
           <div class="column moveDown is-two-thirds has-text-centered">
             <h4 class="title is-4 titleColor">Hola, mi nombre es Luis, soy un estudiante de primero de ingeniería del software. Me gustan los videojuegos, leer, programar y pasar el tiempo con amigos.</h4>
-            <i onclick="rotarImagenes()" class="button is-danger is-focused"> Push me
+            <i onclick="rotarImagenes()" class="button is-danger is-focused"> Press me
             </i>
           </div>
           <div class="column level-item has-text-centered">
@@ -105,5 +105,6 @@
         </div>
       </div>
     </section>
+    <div class="puntero flotante "  ><i onclick="scrollToTop()" id="boSc"class="scrollToTop fas fa-arrow-alt-circle-up fa-3x"></i></div>
   </body>
 </html>

@@ -10,6 +10,10 @@ body{
 	cursor: pointer;
 }
 
+.moverSeccion{
+	padding-top: 6rem;
+}
+
 .marco{
 	border: solid 0.3rem #1E17E8;
 	color:black;
@@ -52,4 +56,15 @@ body{
 	color: white;
 }
 
+.flotante {
+    display: scroll;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    color: blue;
+}
 
+#boSc{
+	  display: none; /* Hidden by default */
+
+}
