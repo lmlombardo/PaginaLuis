@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/tictactoe.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/tictactoe.js"></script>
     <title>Pagina de Luis</title>
   </head>
   <body>
@@ -48,10 +46,15 @@
         <div class="columns">
           <div class="column moveDown is-two-thirds has-text-centered">
             <h4 class="title is-4 titleColor">Hola, mi nombre es Luis, soy un estudiante de primero de ingeniería del software. Me gustan los videojuegos, leer, programar y pasar el tiempo con amigos.</h4>
-            <i onclick="rotarImagenes()" class="button is-danger is-focused"> Press me
-            </i>
-            <div class="grid-button ">
-              <span class="grid open puntero"id="bot" onclick="button()"></span>
+            <div class="columns">
+              <div class="column">
+                <i onclick="rotarImagenes()" class="moveDown button is-danger is-focused"> Press me</i>
+              </div>
+              <div class="column">
+                <div class="grid-button ">
+                  <span class="grid open puntero"id="bot" onclick="button()"></span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="column level-item has-text-centered">
@@ -133,15 +136,5 @@
         </div>
       <!--   <div class="sombra"></div> -->
       </section>
-    <section>
-      <div class="columns">
-        <div class="column is-two-thirds">
-          marmota1
-        </div>
-        <div class="column is-one-third">
-          
-        </div>
-      </div>
-    </section>
   </body>
 </html>

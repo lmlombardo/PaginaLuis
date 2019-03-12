@@ -35,7 +35,7 @@ body{
 }
 
 .moveDown{
-	margin: auto;
+	margin: 30px;
 }
 
 .moveLeft{
@@ -171,19 +171,7 @@ body{
   top: -25px;
   left: 0;
 }
-.vela:after {
-  content:"";
-  position: absolute;
-  background-color: rgba(0,0,0,0.1);
-  transform:rotate(10deg);
-  width:150%;
-  height:50px;
-  left:0;
-  border-radius:100%;
-  bottom:-20px;
-  z-index:-1;
-  animation: opacity 1s ease-in-out infinite;
-} 
+
 .vela.pequena {
   height: 150px;
   bottom:0;
