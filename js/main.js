@@ -17,7 +17,6 @@ var imagenes=new Array(
 function rotarImagenes()
 {
     var index=Math.floor((Math.random()*imagenes.length));
-
     document.getElementById("imagen").src=imagenes[index];
 }
 
@@ -34,4 +33,18 @@ function scrollFunction(){
 function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 
+}
+
+
+function button(){
+
+  if ( document.getElementById("bot").classList.contains('open') ){
+    document.getElementById("bot").classList.remove('open');
+    document.getElementById("bot").classList.add('close');
+  } else{
+    document.getElementById("bot").classList.remove('close');
+    document.getElementById("bot").classList.add('open');
+  }
+
+
 }

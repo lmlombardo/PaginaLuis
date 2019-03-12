@@ -1,0 +1,371 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #3BFFFE;
+}
+
+.puntero:hover{
+	cursor: pointer;
+}
+
+.moverSeccion{
+	padding-top: 6rem;
+}
+
+.marco{
+	border: solid 0.3rem #1E17E8;
+	color:black;
+	background-color: #C8A4FF;
+	height: 70px;
+	width: 70px;
+}
+
+.marco2{
+
+	border: solid 0.3rem #1E17E8;
+	background-color: #C8A4FF;
+	margin-top: auto;
+}
+
+.moveRigth{
+	padding-left: auto;
+	margin-left: auto;
+}
+
+.moveDown{
+	margin: auto;
+}
+
+.moveLeft{
+	
+	padding-right: 10px;
+}
+
+.color1{
+	background-color: #17A1E8;
+}
+
+.color2{
+	background-image: url("./../images/fondo.jpg");
+	border: solid 0.1rem black;
+	background-repeat: no-repeat;
+}
+
+.titleColor{
+	color: white;
+}
+
+.flotante {
+    display: scroll;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    color: blue;
+    z-index:1;
+}
+
+#boSc{
+	  display: none; /* Hidden by default */
+
+}
+
+
+
+.grid-button {
+  height: 100%;
+    
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.grid {
+    background-color: red;
+    color: red;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid.open {
+    box-shadow: -30px -30px,
+                 0px -30px,
+                 30px -30px,
+                -30px 0px,
+                 30px 0px,
+                -30px 30px,
+                 0px 30px,
+                 30px 30px;
+}
+
+.grid.close {
+    box-shadow: -24px 0px,
+                -48px 0px,
+                 0px -24px,
+                 0px 48px,
+                 0px -48px,
+                 0px 24px,
+                 48px 0px,
+                 24px 0px;
+    transform: rotate(45deg) scale(0.75);
+}
+
+.velasSection {
+  height: 100%;
+  min-height: 100%;
+}
+.wrapper {
+  background-color: #8C1F31;
+  display: flex;
+  align-items: center;
+  animation: fundo 4s linear infinite;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/* velas */
+.vela {
+  width: 150px;
+  margin: 0 22px;  
+  background: #fff;
+  background: linear-gradient(to right, #ffffff 40%,#f5dda9 100%);
+  border-bottom-left-radius: 100% 50px;
+  border-bottom-right-radius:100% 50px;
+  -webkit-border-bottom-left-radius: 100% 50px;
+  -webkit-border-bottom-right-radius:100% 50px;
+  position: relative;
+  text-align: center;
+  font-size: 4.5em;
+  color: #59323d;
+  animation: cordavela 4s linear infinite;
+}
+
+.olhos {
+  position: absolute;
+}
+.grande .olhos {animation: olhos 4s ease-in-out infinite;}
+.pequena .olhos {animation: apagarFogo 4s ease-in-out infinite;}
+.olho-direito {
+  right: 30px;
+}
+.olho-esquerdo {
+  left: 30px;
+}
+.vela:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 50px;
+  border-radius:100%;
+  top: -25px;
+  left: 0;
+}
+.vela:after {
+  content:"";
+  position: absolute;
+  background-color: rgba(0,0,0,0.1);
+  transform:rotate(10deg);
+  width:150%;
+  height:50px;
+  left:0;
+  border-radius:100%;
+  bottom:-20px;
+  z-index:-1;
+  animation: opacity 1s ease-in-out infinite;
+} 
+.vela.pequena {
+  height: 150px;
+  bottom:0;
+  animation: velaPequena 4s ease-in infinite;
+}
+.vela.pequena:after {
+  content:"";
+  animation: sombraVelaPequena 4s ease-in infinite;
+}
+.fire {
+  width: 10px;
+  height: 20px;
+  background-color: #9c898c;
+  position: absolute;
+  z-index: 1;
+  left: 47%;
+  top: -25px;
+  border-radius:3px;
+  transform-origin:50% 100%;
+  
+}
+.pequena .fire {animation: apagarFogoSkew 4s ease-in-out infinite;}
+.pequena .fire:before, .pequena .fire:after, .pequena .fire span {
+  content:"";
+  border-radius:50%;
+  position: absolute;
+  transform-origin:50% 100%;
+
+}
+.fire:after {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  left: -10px;
+  top: -26px;
+  animation: fire 1s ease-in-out infinite 0.1s, apagarFogo 4s ease-in-out infinite;
+}
+.fire span {
+  background-color: #f9e630;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  left: -15px;
+  top: -36px;
+  animation: fire 1s ease-in-out infinite 0.2s, apagarFogo 4s ease-in-out infinite;
+}
+.fire:before {
+   width: 50px;
+   height: 50px;
+   background-color: #f2ae27;
+   left: -20px;
+   top: -46px;
+  animation: fire 1s ease-in-out infinite 0.3s, apagarFogo 4s ease-in-out infinite;
+}
+.brilho {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius:50%;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: -140px;
+  animation: fire 1s ease-in-out infinite 0.3s, opacity 1s ease-in-out infinite;
+}
+.vela.grande {
+  height: 300px;
+  animation: velaGrande 4s ease-in-out infinite;
+}
+.vela.grande .boca {
+  background-color: #59323d;
+  width: 60px;
+  height: 60px;
+  border-radius:50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  display:flex;
+  align-item:center;
+  justify-content: center;
+  top:50px;
+  animation: boca 4s ease-in-out infinite;
+}
+.vela.grande .boca:after {
+  content:"";
+  background-color: #b73e6a;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius:inherit;
+  bottom:2px;
+}
+.inflar {
+  background-color: #f5dda9;
+  width: 60px;
+  height: 90px;
+  border-radius:50%;
+  position:absolute;
+  right: 0;
+  z-index: -1;
+  animation: inflar 4s ease-in-out infinite;
+  transform-origin: 200% 100%;
+  top: 30px;
+}
+
+/* animations */
+@keyframes fire {
+  0 {transform: scale(1);}
+  50% {transform: scale(0.8);}
+  100%{transform: scale(1);}
+}
+@keyframes opacity {
+  0 {opacity:1;}
+  50% {opacity:0.7;}
+  100%{opacity:1;}
+}
+
+@keyframes boca {
+  0% {transform: scale(0);}
+  10% {transform: scale(1);}
+  13% {transform: scale(0.1); left:40%;}
+  20% {transform: scale(0); left:40%;}
+  40% {transform: scale(0); left:40%;}
+  100% {transform: scale(0); left:50%;}
+}
+@keyframes inflar {
+  0% {transform:translateX(0);}
+  10% {transform:translateX(0);}
+  13% {transform:translateX(10px);}
+  20% {transform:translateX(0);}
+  100% {transform:translateX(0);}
+}
+@keyframes velaGrande {
+  0% {height:300px;}
+  10% {height:320px;}
+  13% {height:290px;}
+  20% {height:310px;}
+  100% {height:310px;}
+}
+@keyframes olhos {
+  0% {transform:translateX(0);}
+  10% {transform:translateX(-10px);}
+  40% {transform:translateX(0);}
+  100% {transform:translateX(0);}
+}
+
+@keyframes apagarFogo {
+  0% {opacity:1; }
+  10% {opacity:1; }
+  13% {opacity:0; }
+  20% {opacity:0;}
+  100% {opacity:0;}
+}
+@keyframes apagarFogoSkew {
+  0% {transform:skewX(0);}
+  10% {transform:skewX(0);}
+  13% {transform:skewX(20deg);}
+  20% {transform:skewX(-20deg);}
+  25% {transform:skewX(13deg);}
+  28% {transform:skewX(0);}
+  100% {transform:skewX(0);}
+}
+@keyframes velaPequena {
+  0% {bottom:0;}
+  80%{bottom:0; height: 150px;}
+  86%{height:150px;}
+  92% {bottom:50px; height: 150px;}
+  97% {bottom:0; height:120px;}
+  100% {bottom:0; height: 150px;}
+}
+@keyframes sombraVelaPequena {
+  0% {bottom:-20px;}
+  80%{bottom:-20px;}
+  92% {bottom:-90px;}
+  97% {bottom:-20px;} 
+  100% {bottom:-20px;}
+}
+
+@keyframes fundo {
+  0% {background-color: #891b37;}
+  10%{background-color: #891b37;}
+  23% {background-color: #231f52;}
+  100% {background-color: #231f52;}
+}
